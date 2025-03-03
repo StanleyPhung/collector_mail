@@ -80,3 +80,35 @@
     @apply bg-background text-foreground;
   }
 }
+
+.tiptap.ProseMirror {
+  outline: none;
+}
+
+.is-active {
+  background-color: #dddbdb;
+  border-radius: 4px;
+  padding: 0px 2px;
+}
+
+:root {
+  --reply-box-height: 130px;
+  --transition-duration: 0.3s;
+}
+
+.email-container {
+  min-height: 100px;
+  max-height: calc(100vh + var(--reply-box-height) - 500px);
+  overflow-y: auto;
+  transition: max-height var(--transition-duration) ease-in-out;
+}
+
+/* Apply transitions to any element that needs to animate */
+.transition-max-height {
+  transition: max-height var(--transition-duration) ease-in-out;
+}
+
+/* Apply this class to the html element during transitions */
+.transitioning {
+  scroll-behavior: smooth;
+}

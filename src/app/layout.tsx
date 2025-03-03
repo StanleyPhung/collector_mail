@@ -9,6 +9,9 @@ import { TRPCReactProvider } from "@/trpc/react";
 import {
   ClerkProvider,
 } from '@clerk/nextjs'
+import { ThemeProvider } from "next-themes";
+import KBar from "@/components/kbar";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -16,16 +19,29 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <ClerkProvider>
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+        <ClerkProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <TRPCReactProvider>
+              <KBar>
+                {children}
+                <Toaster />
+              </KBar>
+            </TRPCReactProvider>
+          </ThemeProvider>
+        </ClerkProvider>
       </body>
     </html>
-  </ClerkProvider>
   );
 }

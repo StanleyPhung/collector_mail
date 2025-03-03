@@ -1,29 +1,50 @@
-# Create T3 App
+# automatos: A T3 Stack Project
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## Overview
 
-## What's next? How do I make an app with this?
+This automatos project, bootstrapped with `create-t3-app`, is a full-stack application built with Next.js, NextAuth.js, Prisma, Drizzle, Tailwind CSS, and tRPC. The project aims to provide a simple and efficient starting point for developers to build web applications using these popular technologies.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Key Components
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- Next.js: A React framework for server-side rendering, code splitting, and other performance optimizations.
+- NextAuth.js: An authentication library for Next.js that provides flexible and secure user authentication.
+- Prisma: An open-source ORM (Object-Relational Mapping) that provides a type-safe and efficient way to interact with the database.
+- Drizzle: A state management library for React applications that simplifies the management of global application state.
+- Tailwind CSS: A utility-first CSS framework that provides a wide range of pre-built CSS classes to help developers build responsive and customizable user interfaces.
+- tRPC: A type-safe remote procedure call (RPC) framework for TypeScript that provides a convenient and efficient way to handle data fetching and communication between the frontend and backend.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Key Features
 
-## Learn More
+- User authentication using NextAuth.js and multiple authentication providers (e.g., OAuth, email/password).
+- Database interactions using Prisma ORM, allowing developers to query and manipulate data in a type-safe manner.
+- Global state management using Drizzle, simplifying the management of application state and providing a centralized store for data.
+- Responsive and customizable user interfaces using Tailwind CSS, eliminating the need for writing custom CSS.
+- Data fetching and communication between the frontend and backend using tRPC, ensuring type safety and reducing the likelihood of errors.
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Getting Started
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+1. Refer to the [T3 Stack documentation](https://t3docs.com/) for detailed guides and tutorials.
+2. Follow the deployment guides for [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), or [Docker](https://www.docker.com/) to deploy your project.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Project Structure
 
-## How do I deploy this?
+The project structure is organized into several key directories:
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+- `src`: Contains the main source code for the application.
+- `prisma`: Contains the database schema and migration files, using the Prisma ORM for database interactions.
+- `public`: Contains static assets, such as the `favicon.ico` file.
+- `server`: Contains server-side code, including database and API-related files.
+
+## Contributing
+
+Welcome feedback and contributions to the `create-t3-app` GitHub repository. Feel free to open issues, submit pull requests, or contribute to the project in any way you see fit.
+
+## Additional Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [NextAuth.js Documentation](https://next-auth.js.org/getting-started)
+- [Prisma Documentation](https://www.prisma.io/docs)
+- [Drizzle Documentation](https://trufflesuite.github.io/drizzle/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [tRPC Documentation](https://trpc.io/docs/introduction)
+- [T3 Stack Documentation](https://t3docs.com/)

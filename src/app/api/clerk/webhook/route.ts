@@ -1,5 +1,5 @@
+// path to the directory: app/api/clerk/webhooks
 import { db } from "@/server/db"
-import { ok } from "assert"
 
 export const POST = async(req:Request) => {
     const {data} =  await req.json()
@@ -20,6 +20,7 @@ export const POST = async(req:Request) => {
       }
   
       // Create the new user
+      // console.log("here ")
       await db.user.create({
         data: {
           id,
