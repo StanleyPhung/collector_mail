@@ -2,7 +2,7 @@
 
 ## Overview
 
-This automatos project, bootstrapped with `create-t3-app`, is a full-stack application built with Next.js, NextAuth.js, Prisma, Drizzle, Tailwind CSS, and tRPC. The project aims to provide a simple and efficient starting point for developers to build web applications using these popular technologies.
+This automatos project, bootstrapped with `create-t3-app`, is a full-stack application built with Next.js, NextAuth.js, Prisma, Drizzle, Tailwind CSS, and tRPC. The project aims to provide a simple and efficient starting point for developers to build web applications using these popular technologies. For some demonstration, this is the link to the video I'll show: https://drive.google.com/file/d/18anvqqpITDIef4iwNwb3_Lq1hz1W-qd4/view?usp=sharing
 
 ## Key Components
 
