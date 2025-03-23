@@ -1,4 +1,4 @@
-# automatos: A T3 Stack Project
+# Collector mail: A T3 Stack Project
 
 ## Overview
 
